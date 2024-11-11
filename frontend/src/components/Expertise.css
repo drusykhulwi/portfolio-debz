@@ -1,0 +1,66 @@
+.Expertise{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Expertise .expertise-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Expertise .expertise-container .expertise-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Expertise .expertise-container .expertise-content .expertise-content-container{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    line-height: 34px;
+    background-color: #89CFF0;
+    box-shadow: 10px 10px rgba(211, 211, 211, 0.5);
+}
+.Expertise .expertise-container .expertise-content .expertise-content-container h2{
+    color: #a876e6;
+    font-weight: 800;
+    font-size: 30px;
+    overflow: hidden;
+    text-align: start;
+    align-items: start;
+}
+.Expertise .expertise-container .expertise-content .expertise-content-container ul{
+    list-style: disc;
+}
+.Expertise .expertise-container .expertise-content .expertise-content-container ul li{
+    font-size: 19px;
+}
+/* .Expertise .expertise-container .expertise-content .expertise-content-container h2{
+    te;
+} */
+ .Expertise .expertise-container .expertise-image-cont{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.Expertise .expertise-container .expertise-image-cont .expertise-image{
+    width: 70%;
+    height: 80%;
+    background-image: url(https://images.pexels.com/photos/3747075/pexels-photo-3747075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

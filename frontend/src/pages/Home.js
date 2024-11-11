@@ -1,6 +1,7 @@
 import React from 'react'
 import Heropage from '../components/Heropage'
 import About from '../components/About'
+import Expertise from '../components/Expertise'
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
         <div>
             <Heropage/>
             <About/>
+            <Expertise/>
         </div>
     </div>
   )
