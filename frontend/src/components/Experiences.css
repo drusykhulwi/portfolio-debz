@@ -1,0 +1,47 @@
+.Experiences{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Experiences .experiences-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;/* Firefox */
+    -ms-overflow-style: none;/* Internet Explorer 10+ */
+}
+.experiences-container::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #a876e6;
+    color: #89CFF0;
+    border: none;
+    border-radius: 55%;
+    width: 2vw;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: 85px;
+}
+
+.scroll-button.right {
+    right: 85px;
+}

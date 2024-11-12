@@ -2,6 +2,7 @@ import React from 'react'
 import Heropage from '../components/Heropage'
 import About from '../components/About'
 import Expertise from '../components/Expertise'
+import Experiences from '../components/Experiences'
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
             <Heropage/>
             <About/>
             <Expertise/>
+            <Experiences/>
         </div>
     </div>
   )
