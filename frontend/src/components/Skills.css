@@ -1,0 +1,95 @@
+body{
+    list-style-type: circle;
+}
+.Skills{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Skills h2{
+    /* height: 7vh; */
+    color: #a876e6;
+    font-size: 35px;
+    overflow: hidden;
+}
+.Skills .skills-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Skills .skills-container .tech-skills{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Skills .skills-container .tech-skills .tech-skills-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #89CFF0;
+    border-radius: 15px;
+    line-height: 25px;
+}
+h4{
+    color: #a876e6;
+    text-decoration: dotted;
+}
+.Skills .skills-container .soft-skills {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Skills .skills-container .soft-skills .soft-skills-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #89CFF0;
+    border-radius: 15px;
+    line-height: 25px;
+}
+.Skills .skills-container .software-proficiency{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #89CFF0;
+    border-radius: 15px;
+}
+.Skills .skills-container .software-proficiency h4{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Skills .skills-container .software-proficiency .software-image{
+    width: 70%;
+    height: 90%;
+    background-image: url(../Images/softwareproficiency.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* ul li::marker {
+    color: #61DAFB;
+    font-size: 1.5rem;
+} */

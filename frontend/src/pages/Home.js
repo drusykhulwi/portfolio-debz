@@ -3,6 +3,7 @@ import Heropage from '../components/Heropage'
 import About from '../components/About'
 import Expertise from '../components/Expertise'
 import Experiences from '../components/Experiences'
+import Skills from '../components/Skills'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
             <About/>
             <Expertise/>
             <Experiences/>
+            <Skills/>
         </div>
     </div>
   )

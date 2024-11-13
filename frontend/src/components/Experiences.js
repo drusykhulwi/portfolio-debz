@@ -24,6 +24,7 @@ function Experiences() {
   }) 
   return (
     <div className='Experiences'>
+      <h2>My Experiences</h2>  
       <button className="scroll-button left" onClick={scrollLeft}>{"<"}</button>
         <div className="experiences-container" ref={containerRef}>
           {participations}
