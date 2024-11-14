@@ -3,7 +3,7 @@ import './Expertise.css'
 
 function Expertise() {
   return (
-    <div className='Expertise'>
+    <div className='Expertise' id='Expertise'>
         <div className='expertise-container'>
             <div className='expertise-content'>
                 <div className='expertise-content-container'>

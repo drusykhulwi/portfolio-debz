@@ -1,0 +1,37 @@
+.NavBar{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(168, 118, 230, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+}
+.NavBar .navbar-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.NavBar .navbar-container .logo-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.NavBar .navbar-container .logo-container .logo{
+    width: 50px;
+    height: 50px;
+}
+.NavBar .navbar-container .navigation{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.NavBar .navbar-container .navigation a{
+    color: white;
+}

@@ -7,19 +7,22 @@ import Skills from '../components/Skills'
 import Certifications from '../components/Certifications'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
+import NavBar from '../components/NavBar'
+
 
 function Home() {
   return (
     <div className='Home'>
         <div>
-            <Heropage/>
-            <About/>
-            <Expertise/>
-            <Experiences/>
-            <Skills/>
-            <Certifications/>
-            <Testimonials/>
-            <Footer/>
+          <NavBar/>
+          <Heropage/>
+          <About/>
+          <Expertise/>
+          <Skills/>
+          <Experiences/>
+          <Certifications/>
+          <Testimonials/>
+          <Footer/>
         </div>
     </div>
   )

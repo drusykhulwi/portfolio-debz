@@ -23,7 +23,7 @@ function Experiences() {
     return <Experience heading={item.heading} location={item.location} description={item.description}/>
   }) 
   return (
-    <div className='Experiences'>
+    <div className='Experiences' id="Experiences">
       <h2>My Experiences</h2>  
       <button className="scroll-button left" onClick={scrollLeft}>{"<"}</button>
       <div className="experiences-container" ref={containerRef}>

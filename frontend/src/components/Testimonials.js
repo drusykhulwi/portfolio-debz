@@ -22,7 +22,7 @@ function Testimonials() {
     return <Testimonial name={item.name} title={item.title} review={item.review}/>
   })
   return (
-    <div className='Testimonials'>
+    <div className='Testimonials' id="Testimonials">
         <h2>Testimonials</h2>
         <button className="scroll-button left" onClick={scrollLeft}>{"<"}</button>
         <div className="testimonials-container" ref={containerRef}>

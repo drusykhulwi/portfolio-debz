@@ -3,7 +3,7 @@ import './Certifications.css'
 
 function Certifications() {
   return (
-    <div className='Certifications'>
+    <div className='Certifications' id='Certifications'>
         <h2>Certifications</h2>
         <div className='certifications-container'>
             <div className='certifications-images'></div>
