@@ -21,7 +21,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: #a876e6;
+    background-color: rgba(168, 118, 230, 0.5);;
     padding: 20px;
     overflow-y: hidden;
     display: flex;

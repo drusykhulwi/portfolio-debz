@@ -1,0 +1,27 @@
+.Footer{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(168, 118, 230, 0.7);
+}
+.Footer .footer-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Footer .footer-container .description .description{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.Footer .footer-container .description .logo{
+    width: 150px;
+    height: 150px;
+}

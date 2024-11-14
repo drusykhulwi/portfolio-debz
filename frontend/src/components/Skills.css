@@ -11,7 +11,7 @@ body{
 }
 .Skills h2{
     /* height: 7vh; */
-    color: #a876e6;
+    color: rgba(168, 118, 230, 0.5);;
     font-size: 35px;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@ body{
     line-height: 25px;
 }
 h4{
-    color: #a876e6;
+    color: rgba(168, 118, 230, 0.7);;
     text-decoration: dotted;
 }
 .Skills .skills-container .soft-skills {
