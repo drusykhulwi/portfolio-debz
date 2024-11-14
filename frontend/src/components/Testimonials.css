@@ -1,4 +1,4 @@
-.Experiences{
+.Testimonials {
     width: 100vw;
     height: 60vh;
     display: flex;
@@ -7,16 +7,21 @@
     align-items: center;
     position: relative;
 }
-.Experiences .experiences-container{
+
+
+.Testimonials .testimonials-container {
     width: 80%;
     height: 90%;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none;/* Firefox */
-    -ms-overflow-style: none;/* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
 }
-.experiences-container::-webkit-scrollbar {
+
+.testimonials-container::-webkit-scrollbar {
     display: none;
     /* Safari and Chrome */
 }

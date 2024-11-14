@@ -5,6 +5,7 @@ import Expertise from '../components/Expertise'
 import Experiences from '../components/Experiences'
 import Skills from '../components/Skills'
 import Certifications from '../components/Certifications'
+import Testimonials from '../components/Testimonials'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
             <Experiences/>
             <Skills/>
             <Certifications/>
+            <Testimonials/>
         </div>
     </div>
   )
