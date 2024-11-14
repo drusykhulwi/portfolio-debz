@@ -1,0 +1,42 @@
+.Certifications{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Certifications .certifications-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Certifications .certifications-container .certifications-images{
+    width: 50%;
+    height: 60%;
+    background-image: url(https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Certifications .certifications-container .certifications-content-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Certifications .certifications-container .certifications-content-container .certifications-content{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 30px;
+}
+.Certifications .certifications-container .certifications-content-container .certifications-content h2{
+    overflow: hidden;
+}
