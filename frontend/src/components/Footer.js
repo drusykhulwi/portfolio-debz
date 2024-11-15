@@ -9,7 +9,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function Footer() {
   return (
-    <div className='Footer'>
+    <div className='Footer' id='Footer'>
         <div className='footer-container'>
             <div className='description'>
                 <img src={logo} alt="Debz" className='logo'/>

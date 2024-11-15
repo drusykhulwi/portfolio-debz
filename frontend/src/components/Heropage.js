@@ -1,5 +1,6 @@
 import React from 'react'
 import './Heropage.css'
+import { HashLink as Link } from "react-router-hash-link";
 
 function Heropage() {
   return (
@@ -7,7 +8,9 @@ function Heropage() {
         <div className='hero-container'>
             <h1>DEBORA NAMILIMO</h1>
             <h2>Virtual Assistant</h2>
-            <button>Contact Me</button>
+            <button>
+              <Link to="#Footer">Contact Me</Link>
+            </button>
         </div>
     </div>
   )
