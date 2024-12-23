@@ -89,7 +89,55 @@ h4{
     background-size: contain;
     background-repeat: no-repeat;
 }
-/* ul li::marker {
-    color: #61DAFB;
-    font-size: 1.5rem;
-} */
+@media only screen and (max-width: 1024px){
+    .Skills {
+        height: 80vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .Skills .skills-container {
+        width: 80%;
+        height: 100%;
+        /* flex-direction: column; */
+        justify-content: space-between; 
+        align-items: center;
+    }
+    .Skills .skills-container .soft-skills{
+        height: 70%;
+        width: 80%;
+    }
+    .Skills .skills-container .soft-skills .soft-skills-container {
+        justify-content: center;
+    }
+    .Skills .skills-container .tech-skills {
+        height: 70%;
+        width: 80%;
+    }
+    .Skills .skills-container .software-proficiency {
+        height: 70%;
+        width: 60%;
+    }
+
+}
+@media only screen and (max-width: 853px){
+    .Skills .skills-container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Skills .skills-container .soft-skills {
+        height: 35%;
+        width: 80%;
+    }
+    .Skills .skills-container .soft-skills .soft-skills-container {
+        justify-content: center;
+    }
+    .Skills .skills-container .tech-skills {
+        height: 35%;
+        width: 80%;
+    }
+    .Skills .skills-container .software-proficiency {
+        height: 25%;
+        width: 62%;
+    }
+}

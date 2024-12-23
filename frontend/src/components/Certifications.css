@@ -41,3 +41,12 @@
 .Certifications .certifications-container .certifications-content-container .certifications-content h2{
     overflow: hidden;
 }
+
+@media only screen and (max-width: 800px){
+    .Certifications .certifications-container .certifications-images{
+        display: none;
+    }
+    .Certifications .certifications-container .certifications-content-container {
+        width: 100%;
+    }
+}

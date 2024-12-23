@@ -9,6 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(https://images.pexels.com/photos/389818/pexels-photo-389818.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
 }
 .Heropage .hero-container{
     width: 35%;
@@ -40,8 +45,35 @@
     color: #ffffff;
     transition: transform 0.3s ease; /* Smooth transition */
 }
+.Heropage .hero-container button .hero-link{
+    color: #ffffff;
+}
 .Heropage .hero-container button:hover{
     background-color: #89CFF0;
     cursor: pointer;
     transform: scale(1.1); /* Increase size by 10% */
+}
+@media only screen and (max-width: 1115px){
+    .Heropage .hero-container{
+        width: 70%;
+        color: black;
+    }
+    .Heropage .hero-container button{
+        width: 30%;
+        height: 17%;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 362px){
+    .Heropage .hero-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .Heropage .hero-container button{
+        width: 50%;
+        /* height: 25% */
+    }
 }

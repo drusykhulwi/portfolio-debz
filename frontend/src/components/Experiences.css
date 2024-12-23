@@ -46,3 +46,9 @@
 .scroll-button.right {
     right: 85px;
 }
+@media (max-width: 768px) {
+    .scroll-button {
+        width: 4vw;
+        height: 8vh;
+    }
+}

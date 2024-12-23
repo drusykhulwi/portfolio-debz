@@ -64,3 +64,32 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+@media only screen and (max-width: 853px){
+    .Expertise {
+        justify-content: space-between;
+        width: 100vw;
+        height: 70vh;
+    }
+    .Expertise .expertise-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+    .Expertise .expertise-container .expertise-content {
+        width: 100%;
+        height: 50%;
+    }
+    .Expertise .expertise-container .expertise-content .expertise-content-container {
+        width: 80%;
+        height: 100%;
+    }
+    .Expertise .expertise-container .expertise-image-cont {
+        width: 100%;
+        height: 50%;
+    }
+    .Expertise .expertise-container .expertise-image-cont .expertise-image {
+        width: 80%;
+        height: 100%;
+    }
+}

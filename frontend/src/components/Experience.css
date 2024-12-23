@@ -4,8 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: calc(33.33% - 10px);
-    margin: 0 1px;
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 0 5px;
     scroll-snap-align: start;
 }
  .experience-container{
@@ -28,4 +28,10 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .Experience {
+        flex: 0 0 100%;
+    }
+    
 }

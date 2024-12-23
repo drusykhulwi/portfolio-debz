@@ -29,13 +29,13 @@ function Footer() {
             <div className='contacts'>
                 <h3>Contacts</h3>
                 <div className='details'>
-                    <p>
+                    <p className='email'>
                         <FontAwesomeIcon icon={faEnvelope}  className="icons"/>
                         <a href="mailto:debrahlymo15@gmail.com">
                             debrahlymo15@gmail.com
                         </a>
                     </p>
-                    <p>
+                    <p className="phone">
                         <FontAwesomeIcon icon={faPhone}   className="icons"/>
                         <a href="tel:+254718955122">
                             +254718955122
@@ -51,5 +51,6 @@ function Footer() {
     </div>
   )
 }
+
 
 export default Footer

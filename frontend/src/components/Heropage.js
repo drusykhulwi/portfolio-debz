@@ -9,7 +9,7 @@ function Heropage() {
             <h1>DEBORA NAMILIMO</h1>
             <h2>Virtual Assistant</h2>
             <button>
-              <Link to="#Footer">Contact Me</Link>
+              <Link to="#Footer" className='hero-link'>Contact Me</Link>
             </button>
         </div>
     </div>

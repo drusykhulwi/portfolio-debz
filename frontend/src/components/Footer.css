@@ -7,14 +7,14 @@
     background-color: rgba(168, 118, 230, 0.7);
 }
 .Footer .footer-container{
-    width: 80%;
+    width: 95%;
     height: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.Footer .footer-container .description .description{
-    width: 30%;
+.Footer .footer-container .description{
+    width: 20%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -22,8 +22,8 @@
     align-items: center;
 }
 .Footer .footer-container .description .logo{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 a{
     text-decoration: none;
@@ -45,7 +45,7 @@ a{
     justify-content: space-around;
 }
 .Footer .footer-container .contacts{
-    width: 30%;
+    width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -59,11 +59,56 @@ a{
     flex-direction: column;
     justify-content: space-around;
 }
-/* .Footer .footer-container .contacts .details p{
+.Footer .footer-container .contacts .details .email{
     display: flex;
     justify-content: space-around;
-    width: 90%;
+    /* width: 90%; */
+}
+/* .Footer .footer-container .contacts .details .phone{
+    width: 48%;
 } */
 Link{
     color: rgba(168, 118, 230);
+}
+@media (max-width: 810px) {
+    .Footer .footer-container {
+        width: 100%;
+    }
+
+    .Footer .footer-container .quicklinks {
+        width: 20%;
+    }
+
+    .Footer .footer-container .contacts {
+        width: 50%;
+    }
+
+}
+@media (max-width: 615px) {
+    .Footer{
+        height: 100vh;
+    }
+    .Footer .footer-container {
+        flex-direction: column;
+        height: 100%;
+    }
+    .Footer .footer-container .description {
+        width: 100%;
+    }
+    .Footer .footer-container .quicklinks {
+        width: 100%;
+    }
+    .Footer .footer-container .contacts {
+        width: 100%;
+    }
+    .Footer .footer-container .contacts p{
+        justify-content: space-evenly;
+    }
+    .icons{
+        display: none;
+    }
+    .Footer .footer-container .contacts p a{
+        width: 100%;
+    }
+
 }
