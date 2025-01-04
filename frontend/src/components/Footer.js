@@ -23,7 +23,6 @@ function Footer() {
                     <Link to="#Experiences">Experiences</Link>
                     <Link to="#Expertise">Expertise</Link>
                     <Link to="#Certifications">Certifications</Link>
-                    <Link to="#Testimonials">Testimonials</Link>
                 </div>
             </div>
             <div className='contacts'>

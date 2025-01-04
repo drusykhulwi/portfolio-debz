@@ -16,7 +16,7 @@
 .Certifications .certifications-container .certifications-images{
     width: 50%;
     height: 60%;
-    background-image: url(https://images.pexels.com/photos/7942430/pexels-photo-7942430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(../Images/cet.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,6 +40,10 @@
 }
 .Certifications .certifications-container .certifications-content-container .certifications-content h2{
     overflow: hidden;
+}
+ul{
+    list-style: georgian;
+    color: black;
 }
 
 @media only screen and (max-width: 800px){

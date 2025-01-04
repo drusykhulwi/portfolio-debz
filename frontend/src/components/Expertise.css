@@ -1,11 +1,12 @@
-.Expertise{
+.Expertise {
     width: 100vw;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Expertise .expertise-container{
+
+.Expertise .expertise-container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -13,14 +14,15 @@
     align-items: center;
 }
 
-.Expertise .expertise-container .expertise-content{
+.Expertise .expertise-container .expertise-content {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Expertise .expertise-container .expertise-content .expertise-content-container{
+
+.Expertise .expertise-container .expertise-content .expertise-content-container {
     width: 60%;
     height: 70%;
     display: flex;
@@ -32,7 +34,8 @@
     background-color: #89CFF0;
     box-shadow: 10px 10px rgba(211, 211, 211, 0.5);
 }
-.Expertise .expertise-container .expertise-content .expertise-content-container h2{
+
+.Expertise .expertise-container .expertise-content .expertise-content-container h2 {
     color: #a876e6;
     font-weight: 800;
     font-size: 30px;
@@ -40,56 +43,103 @@
     text-align: start;
     align-items: start;
 }
-.Expertise .expertise-container .expertise-content .expertise-content-container ul{
+
+.Expertise .expertise-container .expertise-content .expertise-content-container ul {
     list-style: disc;
 }
-.Expertise .expertise-container .expertise-content .expertise-content-container ul li{
+
+.Expertise .expertise-container .expertise-content .expertise-content-container ul li {
     font-size: 19px;
 }
-/* .Expertise .expertise-container .expertise-content .expertise-content-container h2{
-    te;
-} */
- .Expertise .expertise-container .expertise-image-cont{
+
+.Expertise .expertise-container .expertise-image-cont {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
- }
-.Expertise .expertise-container .expertise-image-cont .expertise-image{
+}
+
+.Expertise .expertise-container .expertise-image-cont .expertise-image {
     width: 70%;
     height: 80%;
-    background-image: url(https://images.pexels.com/photos/3747075/pexels-photo-3747075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(../Images/VACert.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
-@media only screen and (max-width: 853px){
+
+/* Enhanced Media Queries for Responsiveness */
+@media only screen and (max-width: 1024px) {
     .Expertise {
-        justify-content: space-between;
-        width: 100vw;
-        height: 70vh;
+        height: auto;
+        padding: 20px;
     }
+
     .Expertise .expertise-container {
         flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: space-between;
+        height: auto;
+        justify-content: center;
+        align-items: center;
     }
+
     .Expertise .expertise-container .expertise-content {
-        width: 100%;
-        height: 50%;
+        width: 90%;
+        margin-bottom: 20px;
     }
+
     .Expertise .expertise-container .expertise-content .expertise-content-container {
-        width: 80%;
-        height: 100%;
-    }
-    .Expertise .expertise-container .expertise-image-cont {
         width: 100%;
-        height: 50%;
+        height: auto;
+        text-align: center;
+        line-height: 28px;
     }
+
+    .Expertise .expertise-container .expertise-image-cont {
+        width: 90%;
+        height: auto;
+    }
+
     .Expertise .expertise-container .expertise-image-cont .expertise-image {
-        width: 80%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Expertise .expertise-container .expertise-content .expertise-content-container h2 {
+        font-size: 24px;
+    }
+
+    .Expertise .expertise-container .expertise-content .expertise-content-container ul li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Expertise {
+        padding: 10px;
+    }
+
+    .Expertise .expertise-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .Expertise .expertise-container .expertise-content .expertise-content-container {
+        line-height: 22px;
+    }
+
+    .Expertise .expertise-container .expertise-content .expertise-content-container ul li {
+        font-size: 14px;
+    }
+
+    .Expertise .expertise-container .expertise-image-cont {
+        height: 40vh;
+    }
+
+    .Expertise .expertise-container .expertise-image-cont .expertise-image {
         height: 100%;
     }
 }
