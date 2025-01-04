@@ -23,7 +23,6 @@ function NavBar() {
           <Link to="#Experiences">Experiences</Link>
           <Link to="#Expertise">Expertise</Link>
           <Link to="#Certifications">Certifications</Link>
-          <Link to="#Testimonials">Testimonials</Link>
           <button className='nav-btn nav-close-btn' onClick={showNavbar}>
             <FaTimes />
           </button>

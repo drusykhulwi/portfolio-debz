@@ -5,7 +5,6 @@ import Expertise from '../components/Expertise'
 import Experiences from '../components/Experiences'
 import Skills from '../components/Skills'
 import Certifications from '../components/Certifications'
-import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 import NavBar from '../components/NavBar'
 
@@ -21,7 +20,6 @@ function Home() {
           <Skills/>
           <Experiences/>
           <Certifications/>
-          <Testimonials/>
           <Footer/>
         </div>
     </div>
