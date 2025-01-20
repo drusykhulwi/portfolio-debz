@@ -1,54 +1,118 @@
-.Experiences{
-    width: 100vw;
-    height: 60vh;
+.Experiences {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 20px; /* Add padding for smaller screens */
+    box-sizing: border-box; 
 }
-.Experiences .experiences-container{
-    width: 80%;
-    height: 90%;
+
+.Experiences h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Experiences .experiences-container {
+    width: 90%; /* Increase width for better responsiveness */
+    height: auto; /* Allow height to adjust automatically */
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scrollbar-width: none;/* Firefox */
-    -ms-overflow-style: none;/* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    gap: 10px; /* Add some spacing between items */
+    padding: 10px; /* Add padding for better alignment */
 }
+
 .experiences-container::-webkit-scrollbar {
-    display: none;
-    /* Safari and Chrome */
+    display: none; /* Safari and Chrome */
 }
 
 .scroll-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(168, 118, 230, 0.7);
-    color: #89CFF0;
+    background-color: rgba(168, 118, 230, 0.8);
+    color: #fff;
     border: none;
-    border-radius: 55%;
-    width: 2vw;
-    height: 4vh;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.scroll-button:hover {
+    background-color: rgba(168, 118, 230, 1);
 }
 
 .scroll-button.left {
-    left: 85px;
+    left: 10px; /* Adjust position for all screen sizes */
 }
 
 .scroll-button.right {
-    right: 85px;
+    right: 10px; /* Adjust position for all screen sizes */
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+    .Experiences {
+        height: 50vh; /* Reduce height for iPads */
+        padding: 15px;
+    }
+
+    .Experiences .experiences-container {
+        height: 50%;/* Adjust the container height */
+    }
+
+    .Experiences h2 {
+        font-size: 1.8rem; /* Keep the heading smaller for balance */
+    }
+
     .scroll-button {
-        width: 4vw;
-        height: 8vh;
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Experiences {
+        padding: 15px; /* Add padding for small screens */
+    }
+
+    .Experiences h2 {
+        font-size: 1.6rem;
+    }
+
+    .scroll-button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+    .Experiences .experiences-container {
+        gap: 5px; /* Reduce spacing between items */
+    }
+}
+
+@media (max-width: 480px) {
+    .Experiences h2 {
+        font-size: 1.4rem;
+    }
+
+    .scroll-button {
+        width: 25px;
+        height: 25px;
+        font-size: 0.7rem;
     }
 }

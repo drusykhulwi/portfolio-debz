@@ -1,139 +1,148 @@
 body{
     list-style-type: circle;
 }
-.Skills{
+.Skills {
     width: 100vw;
-    height: 70vh;
+    height: auto; /* Allow dynamic height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 .Skills h2{
     color: rgba(168, 118, 230, 0.5);
     font-size: 35px;
     overflow: hidden;
+    margin-bottom: 20px;
 }
-.Skills .skills-container{
-    width: 80%;
-    height: 80%;
+.Skills .skills-container {
+    width: 90%; /* Adjust width for better fit */
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    gap: 20px; /* Add space between items */
+    box-sizing: border-box;
 }
-.Skills .skills-container .tech-skills{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Skills .skills-container .tech-skills .tech-skills-container{
-    width: 80%;
-    height: 100%;
+.Skills .skills-container .tech-skills,
+.Skills .skills-container .soft-skills,
+.Skills .skills-container .software-proficiency {
+    flex: 1; /* Allow flexible sizing */
+    max-width: 30%; /* Prevent items from getting too wide */
+    min-width: 250px; /* Ensure a reasonable minimum size */
+    height: auto; /* Adjust height dynamically */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #89CFF0;
     border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Skills .skills-container .tech-skills .tech-skills-container,
+.Skills .skills-container .soft-skills .soft-skills-container {
+    width: 100%;
+    height: auto; /* Allow height to adjust */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     line-height: 25px;
 }
-h4{
+h4 {
     color: rgba(168, 118, 230, 0.7);
     text-decoration: dotted;
+    margin-bottom: 10px;
+    text-align: center;
 }
-.Skills .skills-container .soft-skills {
-    width: 30%;
-    height: 100%;
+.Skills .skills-container .software-proficiency .software-image {
+    width: 80%; /* Ensure the image fits the container */
+    height: auto; /* Maintain aspect ratio */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.Skills .skills-container .soft-skills .soft-skills-container {
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #89CFF0;
-    border-radius: 15px;
-    line-height: 25px;
-}
-.Skills .skills-container .software-proficiency{
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #89CFF0;
-    border-radius: 15px;
-}
-.Skills .skills-container .software-proficiency h4{
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Skills .skills-container .software-proficiency .software-image{
-    width: 70%;
-    height: 90%;
-    background-image: url(../Images/softwareproficiency.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
     .Skills {
-        height: 100vh;
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
+        height: auto; /* Adjust height dynamically */
+        padding: 20px;
     }
+
+    .Skills h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
     .Skills .skills-container {
-        width: 80%;
-        height: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .Skills .skills-container .soft-skills{
-        height: 70%;
-        width: 80%;
-    }
-    .Skills .skills-container .soft-skills .soft-skills-container {
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
     }
-    .Skills .skills-container .tech-skills {
-        height: 70%;
-        width: 80%;
-    }
+
+    .Skills .skills-container .tech-skills,
+    .Skills .skills-container .soft-skills,
     .Skills .skills-container .software-proficiency {
-        height: 70%;
-        width: 60%;
+        max-width: 40%; /* Adjust max width for tablets */
+        height: auto;
+        padding: 15px;
+    }
+
+    .Skills .skills-container .software-proficiency {
+        max-width: 30%;
     }
 }
 
-@media only screen and (max-width: 853px){
-    .Skills .skills-container{
+/* Mobile and Smaller Tablets */
+@media only screen and (max-width: 768px) {
+    .Skills {
+        padding: 15px;
+    }
+
+    .Skills h2 {
+        font-size: 25px;
+    }
+
+    .Skills .skills-container {
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
     }
-    .Skills .skills-container .soft-skills {
-        height: 35%;
-        width: 80%;
-    }
-    .Skills .skills-container .soft-skills .soft-skills-container {
-        justify-content: center;
-    }
-    .Skills .skills-container .tech-skills {
-        height: 35%;
-        width: 80%;
-    }
+
+    .Skills .skills-container .tech-skills,
+    .Skills .skills-container .soft-skills,
     .Skills .skills-container .software-proficiency {
-        height: 25%;
-        width: 62%;
+        max-width: 80%; /* Center and reduce width */
+        height: auto;
+        padding: 15px;
+    }
+
+    .Skills .skills-container .software-proficiency .software-image {
+        width: 60%; /* Adjust image size for smaller screens */
+    }
+}
+
+/* Extra Small Screens */
+@media only screen and (max-width: 480px) {
+    .Skills {
+        padding: 10px;
+    }
+
+    .Skills h2 {
+        font-size: 20px;
+    }
+
+    .Skills .skills-container .tech-skills,
+    .Skills .skills-container .soft-skills,
+    .Skills .skills-container .software-proficiency {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .Skills .skills-container .software-proficiency .software-image {
+        width: 50%; /* Further reduce image size */
     }
 }

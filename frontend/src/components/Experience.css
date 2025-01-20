@@ -7,6 +7,7 @@
     flex: 0 0 calc(33.33% - 10px);
     margin: 0 5px;
     scroll-snap-align: start;
+    overflow: hidden; 
 }
  .experience-container{
     width: 80%;

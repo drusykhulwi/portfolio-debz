@@ -1,5 +1,6 @@
 import React from 'react'
 import './Skills.css'
+import Software from '../Images/softwareproficiency.png'
 
 function Skills() {
   return (
@@ -38,7 +39,9 @@ function Skills() {
             </div>
             <div className='software-proficiency'>
                 <h4>Software Proficiency</h4>
-                <div className='software-image'></div>
+                <div className='software-image'>
+                    <img src={Software} alt='software profieciency'/>
+                </div>
             </div>
         </div>
     </div>
